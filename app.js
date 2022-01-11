@@ -27,3 +27,9 @@ let weather = {
 document.querySelector('button').addEventListener('click',()=>{
     weather.search();
 })
+document.querySelector('input').addEventListener('keyup',(e)=>{
+   if(e.key === "Enter"){
+      weather.search();
+    }
+})
+ 
